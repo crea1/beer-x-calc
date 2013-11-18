@@ -32,7 +32,7 @@
         </form>
         <h1>
             ABV:
-            <span class="label label-success" ng-show="form.og.$valid && form.fg.$valid">
+            <span class="label label-success" ng-show="form.og.$valid && form.fg.$valid &&result() < 100 && result() > 0">
                 {{result() | number:2}}%
             </span>
         </h1>
