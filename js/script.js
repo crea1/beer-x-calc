@@ -13,21 +13,3 @@ function AlcoholCalc($scope) {
 
     };
 }
-
-
-$(window).load(function() {
-    var aspectRatio      = $("#bg").width() / $("#bg").height();
-    function resizeBg() {
-        if ( ($(window).width() / $(window).height()) < aspectRatio ) {
-            $("#bg")
-                .removeClass()
-                .addClass('bgheight');
-        } else {
-            $("#bg")
-                .removeClass()
-                .addClass('bgwidth');
-        }
-    }
-
-    $(window).resize(resizeBg).trigger("resize");
-});
