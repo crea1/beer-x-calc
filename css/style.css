@@ -1,16 +1,6 @@
-/*
-.abv-form input.ng-invalid.ng-dirty {
-    background-color: #fad3da;
-}
-*/
 body {
     padding-top: 30px;
     padding-bottom: 30px;
-    /*background: url("../img/bg1920x1200.jpg") no-repeat center center fixed;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .calc {
@@ -19,33 +9,22 @@ body {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    position:relative;
 }
-
-@media(max-width:767px){
-    body {
-        background: url("../img/bg-small.jpg") no-repeat center center fixed;
-    }
-}
-/* Customize container */
-@media (min-width: 768px) {
-    body {
-        background: url("../img/bg1920x1200.jpg") no-repeat center center fixed;
-    }
-    .container {
-        max-width: 630px;
-    }
-}
-
-.form-group {
-    min-height: 150px;
-}
-.alert {
-    font-size: 14px;
-}
-
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+.form-group { min-height: 150px; }
+.alert { font-size: 14px; }
 
 .arrow_box { position: relative; background: #F2DEDE; border: 1px solid #EBCCD1; color: #B94A48 }
 .arrow_box:after,
 .arrow_box:before { bottom: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
 .arrow_box:after { border-color: rgba(242, 222, 222, 0); border-bottom-color: #F2DEDE; border-width: 15px; margin-left: -15px; }
 .arrow_box:before { border-color: rgba(235, 204, 209, 0); border-bottom-color: #EBCCD1; border-width: 16px; margin-left: -16px; }
+
+
+/* Customize container */
+@media (min-width: 768px) {
+    .container { max-width: 630px; }
+}
