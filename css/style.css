@@ -6,9 +6,23 @@
 body {
     padding-top: 30px;
     padding-bottom: 30px;
+    /*background: url("../img/bg1920x1200.jpg") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media(max-width:767px){
+    body {
+        background: url("../img/bg-small.jpg") no-repeat center center fixed;
+    }
 }
 /* Customize container */
 @media (min-width: 768px) {
+    body {
+        background: url("../img/bg1920x1200.jpg") no-repeat center center fixed;
+    }
     .container {
         max-width: 630px;
     }
