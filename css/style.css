@@ -13,6 +13,14 @@ body {
     background-size: cover;
 }
 
+.calc {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
 @media(max-width:767px){
     body {
         background: url("../img/bg-small.jpg") no-repeat center center fixed;

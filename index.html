@@ -8,34 +8,43 @@
 </head>
 <body>
 <div class="container text-center">
-    <h1>ABV Calculator</h1>
-    <div ng-controller="AlcoholCalc">
-        <form name="form" class="abv-form form-inline" role="form" novalidate>
-            <div class="form-group">
-                <label for="og" class="control-label">Original Gravity (OG):</label>
-                <div>
-                    <input id="og" type="number" name="og" class="form-control input-lg" ng-model="originalGravity" placeholder="1.040" required>
-                </div>
-                <div ng-show="form.og.$dirty && form.og.$invalid" class="alert arrow_box">
-                    <strong>O'oh!</strong> OG is not a number!
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="fg" class="control-label">Final Gravity (FG):</label>
-                <div>
-                    <input id="fg" type="number" name="fg" class="form-control input-lg" ng-model="finalGravity" placeholder="1.009" required>
-                    <div ng-show="form.fg.$dirty && form.fg.$invalid" class="alert arrow_box">
-                        <strong>Can't compute!</strong> Try with a number!
+    <div class="calc">
+        <h1>ABV Calculator</h1>
+
+        <div ng-controller="AlcoholCalc">
+            <form name="form" class="abv-form form-inline" role="form" novalidate>
+                <div class="form-group">
+                    <label for="og" class="control-label">Original Gravity (OG):</label>
+
+                    <div>
+                        <input id="og" type="number" name="og" class="form-control input-lg" ng-model="originalGravity"
+                               placeholder="1.040" required>
+                    </div>
+                    <div ng-show="form.og.$dirty && form.og.$invalid" class="alert arrow_box">
+                        <strong>O'oh!</strong> OG is not a number!
                     </div>
                 </div>
-            </div>
-        </form>
-        <h1>
-            ABV:
-            <span class="label label-success" ng-show="form.og.$valid && form.fg.$valid &&result() < 100 && result() > 0">
+                <div class="form-group">
+                    <label for="fg" class="control-label">Final Gravity (FG):</label>
+
+                    <div>
+                        <input id="fg" type="number" name="fg" class="form-control input-lg" ng-model="finalGravity"
+                               placeholder="1.009" required>
+
+                        <div ng-show="form.fg.$dirty && form.fg.$invalid" class="alert arrow_box">
+                            <strong>Can't compute!</strong> Try with a number!
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <h1>
+                ABV:
+            <span class="label label-success"
+                  ng-show="form.og.$valid && form.fg.$valid &&result() < 100 && result() > 0">
                 {{result() | number:2}}%
             </span>
-        </h1>
+            </h1>
+        </div>
     </div>
 </div>
 
