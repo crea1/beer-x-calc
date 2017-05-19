@@ -1,4 +1,6 @@
-function AlcoholCalc($scope) {
+var app = angular.module('beerCalc', []);
+
+app.controller('AlcoholCalc', function($scope) {
 
     $scope.result = function() {
         var og = parseFloat($scope.originalGravity);
@@ -12,4 +14,4 @@ function AlcoholCalc($scope) {
         return (og - fg) / 0.00753;
 
     };
-}
+});

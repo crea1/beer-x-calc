@@ -1,17 +1,17 @@
 <!doctype html>
-<html ng-app>
+<html>
 <head>
     <title>ABV Calculator</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/angular.min.js"></script>
+    <script src="vendor/angular.min.js"></script>
 </head>
 <body>
 <div class="container text-center">
     <div class="calc">
         <h1>ABV Calculator</h1>
 
-        <div ng-controller="AlcoholCalc">
+        <div ng-app="beerCalc" ng-controller="AlcoholCalc">
             <form name="form" class="abv-form form-inline" role="form" novalidate>
                 <div class="form-group">
                     <label for="og" class="control-label">Original Gravity (OG):</label>
@@ -48,8 +48,8 @@
     </div>
 </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

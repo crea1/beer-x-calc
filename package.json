@@ -1,0 +1,31 @@
+{
+  "name": "beer-x-calc",
+  "version": "1.0.0",
+  "description": "ABV Calculator",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run copy-bootstrap && npm run copy-angular && npm run copy-jquery",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-bootstrap": "mkdir -p vendor && cp node_modules/bootstrap/dist/css/bootstrap.min.css node_modules/bootstrap/dist/js/bootstrap.min.js vendor/",
+    "copy-angular": "mkdir -p vendor && cp node_modules/angular/angular.min.js vendor/",
+    "copy-jquery": "mkdir -p vendor && cp node_modules/jquery/dist/jquery.min.js vendor/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crea1/beer-x-calc.git"
+  },
+  "keywords": [
+    "beer"
+  ],
+  "author": "Marius Kristensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crea1/beer-x-calc/issues"
+  },
+  "homepage": "https://github.com/crea1/beer-x-calc#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
