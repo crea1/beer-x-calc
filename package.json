@@ -27,5 +27,8 @@
     "angular": "^1.6.4",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
