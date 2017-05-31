@@ -8,6 +8,7 @@ Various beer calculators:
 
 `npm run install`
 `npm run build`
+`gulp`
 
 
 Technologies / Frameworks
