@@ -1,9 +1,18 @@
 sudo              : false
+addons:
+  ssh_known_hosts: ssh.suiram.org
 language          : node_js
 node_js           :
   - "6"
 before_script     :
   - "npm install -g gulp"
 script            :
+  - "npm install"
   - "npm run build"
   - "gulp"
+deploy :
+  provider: script
+  skip_cleanup: true
+  script: scripts/deploy.sh
+  on:
+    branch: develop
